@@ -2,15 +2,19 @@
   "name": "sorter",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://teeehn.github.io/sorter",
   "devDependencies": {
     "react-scripts": "2.1.5"
   },
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "js-flock": "^3.6.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
